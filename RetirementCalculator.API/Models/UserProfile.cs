@@ -11,10 +11,10 @@ namespace RetirementCalculator.API.Models
         public decimal CurrentSalary { get; set; }
         public decimal CurrentBalance { get; set; }
         public decimal ContributionPercentage { get; set; }
-        public decimal EmployerMatchPercentage { get; set; }
-        public decimal EmployerMatchLimit { get; set; }
+        public decimal? EmployerMatchPercentage { get; set; }
+        public decimal? EmployerMatchLimit { get; set; }
 
-        public List<RetirementScenario> Scenarios { get; set }
+        public List<RetirementScenario> Scenarios { get; set; }
     }
 
 }
